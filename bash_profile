@@ -5,8 +5,8 @@ function prompt {
   local REDBOLD="\[\033[1;31m\]"
   local GREEN="\[\033[0;32m\]"
   local GREENBOLD="\[\033[1;32m\]"
-  local YELLOW="\[\033[0;33m\]"
-  local YELLOWBOLD="\[\033[1;33m\]"
+  local YELLOW="\[\033[0;93m\]"
+  local YELLOWBOLD="\[\033[1;93m\]"
   local BLUE="\[\033[0;34m\]"
   local BLUEBOLD="\[\033[1;34m\]"
   local PURPLE="\[\033[0;35m\]"
@@ -17,12 +17,11 @@ function prompt {
   local WHITEBOLD="\[\033[1;37m\]"
   local RESETCOLOR="\[\e[00m\]"
 
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export PS1="\[\033[31m\]\u\[\033[m\]@\[\033[0;93m\]\h:\[\033[0;92m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1/"
 }
 
 prompt
